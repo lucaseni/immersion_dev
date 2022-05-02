@@ -16,10 +16,15 @@
         </div>
         <div id="resultDiv"></div>
         <h2 class="box">Calculator</h2>
-        <p>Insert the first value for the calculation:</p>
-        <input type="number" id="calculatorvalue1">
-        <p>Insert the second value for the calculation:</p>
-        <input type="number" id="calculatorvalue2">
+        <form>
+            <p>Insert the first value for the calculation:</p>
+            <input type="number" id="calculatorvalue1">
+            <p>Insert the second value for the calculation:</p>
+            <input type="number" id="calculatorvalue2"><br>
+            <p>Enter a number between 1 and 4 to choose the desired type of operation: 1 to multiply. 2 to divide. 3 to sum. 4 to subtraction.  </p>
+            <input type="number"  id="kindOfCalculation" min="1" max="4">
+            <input type="submit" onclick="Click(2)">
+        </form>
         <script src="app.js">
         </script>
     </body>
